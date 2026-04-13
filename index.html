@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interfaz Three.js sin vista de camara</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <main class="app-shell">
+    <canvas id="three_canvas"></canvas>
+
+    <section class="hud">
+      <h1>Interfaz 3D por gestos</h1>
+      <p id="status_text">Inicializando workers...</p>
+      <button id="start_button" type="button">Parar cámara</button>
+      <button id="asr_button" type="button">Parar ASR</button>
+      <p id="asr_text">ASR inactivo.</p>
+      <p id="asr_command_text">Comando reconocido: -</p>
+      <p id="click_text">Elemento clicado: ninguno.</p>
+      <p class="hint">La cámara se activa automáticamente. Los botones permiten pausar.</p>
+    </section>
+
+    <video id="webcam" autoplay playsinline muted></video>
+  </main>
+
+  <script type="module" src="./script.js?v=auto-init-3"></script>
+</body>
+</html>
